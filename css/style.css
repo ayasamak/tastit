@@ -1,0 +1,190 @@
+/*body{height: 3000px}*/
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{height: 2000px}
+.header{overflow: hidden;}
+.navbar{position: relative;z-index: 999999;padding: 15px;top:50px;left:150px;width: 78%;background-color:#00000061;}
+.navbar h3{color:#E52C35;}
+.navbar h5{float:right;display: none;color:white;cursor: pointer;}
+.navbar h3 span{color:white}
+.navbar ul{ list-style: none;margin-left: 300px;color: white}
+.navbar ul li{display: inline-block;margin-right: 30px;transition: .5s;text-transform: capitalize;cursor: pointer;font-size: 18px;}
+.navbar ul li:hover{color:#E52C35;}
+.navbar ul .active{color:#E52C35;}
+.overlay{width: 100%;height:100%;background:rgba(0,0,0,.6);z-index:3;}
+.slider{z-index: 2;height: 780px;}
+.slide1{background-image: url(../images/bg_1.jpg);background-repeat: no-repeat;background-size: cover;max-width: 100%;height:100%;
+  margin-top: -100px;
+}
+.slide2{background-image: url(../images/bg_2.jpg);background-repeat: no-repeat;background-size: cover;max-width: 100%;height:100%;
+  margin-top: -100px;
+}
+.slide p{position: absolute;color: white;top: 150px;margin-left: 500px;padding: 5px;border: 1px solid;font-size:20px;width: 310px;
+    text-align: center;letter-spacing: 4px;text-transform: uppercase;}
+.slide span{position: absolute;top: 400px;left: 610px;color: white;font-size: 20px;}
+.slide span::after{content: "" ;width: 100px;height: 3px;position: absolute;background: red;top: 15px;right:-120px;}
+.slide span::before{content: "" ;width: 100px;height: 3px;position: absolute;background: red;top: 15px;left: -120px;}
+.slide h1{position: absolute;color: white;top: 250px;margin-left:330px;font-size:90px;text-align: center;text-transform: uppercase;font-family: "Sofia";}
+.slider .point ,.slider .point2{cursor: pointer;position: absolute;top:460px;width: 15px;height: 15px;border-radius: 50%;background:#ffffffc7;}
+.slider .point2{left:650px}
+.slider .point{left:620px}
+.slider .Active{background: red !important;}
+.display{display:none}
+.down{position:fixed;width:100%;left:0;top:0;background:white;color:black;padding:5px;border-bottom: 2px solid white;
+box-shadow: 2px 2px 2px #80808040}
+.downh3{margin-left: 100px}
+@media only screen and (max-width:600px) {
+.navbar{width:100%;left:0;background: black;margin-top: -50px;position: relative;}
+.navbar h3{float: left;color: white}
+.navbar h5{display:block}
+.navbar ul{left: -300px;color: white;position: relative;display: none}
+.navbar ul li{display:block;margin-top:20px;color: gray}
+.navbar ul .active{color: white}
+.navbar ul li:hover{color:white;}
+.slider{height:470px}
+.slider{position: relative;top: 150px}
+.slide1,.slide2{background-size:cover;width: 100%;height: 100%}
+.slide p{margin-left:16%;top: 100px;}
+.slide h1{top: 170px;margin-left:23%;font-size: 30px;}
+.slide span{left:42%;top: 240px;}
+.slider .point ,.slider .point2{top: 280px;}
+.slider .point {left: 44%;}
+.slider .point2{left:51%;}
+.navbar .display{display:block;}
+}
+
+/* part 2*/
+.about{clear: both;position: relative;}
+.about .boo{width: 30%;  padding: 10px;background: #E52B34;float: left;margin-right: 30px;}
+.about .boo h3{color: white;text-align: center;margin-bottom: 15px;margin-top:50px }
+.about .boo input{color:white;outline: none;margin-left:40px;display: block;width: 80%;height: 40px;border: 1px solid white;background: none;padding: 5px;margin-bottom: 15px}
+.about .boo input::placeholder{color: white}
+.boo button{margin: 10px 0px 60px 40px;outline: none;border: none;  width: 80%;height: 60px;background-color: white;}
+.about .words{float: left;width:60%;margin-left: 30px;margin-top: 120px;position: relative;}
+.about .words h6{font-family: "Sofia";color: #E52C35;font-size: 25px;position: relative;z-index: 2}
+.about .words h1{font-weight: bold;margin-top: -26px;color: #000000ad;position: relative;z-index: 2}
+.about .words p{color: #808080e3;line-height: 2;margin-top: 20px;z-index: 2;position: absolute;width: 400px;}
+.about .words img{position: relative;top: -208px;height: 550px;z-index: 1;}
+@media only screen and (max-width:600px) {
+.about .boo{width: 100%;}
+.words{margin-left: 0;float: none;width: 100%}
+.about .words img{top: -210px;width: 160%;}
+.about .words p{width: 350px;left: -12%;}
+}
+/* part 3*/
+.booking{clear:both;background-image: url("../images/bg_3.jpg");height:400px;background-size: cover;background-repeat: no-repeat;
+background-attachment: fixed;position: relative;top: -210px;text-align: center;color: white;padding: 10px;
+}
+.booking h6{margin-top: 200px;letter-spacing: 3px;}
+.booking h1{font-weight: bold}
+@media only screen and (max-width:600px) {
+  .booking{width: 100%}
+  .booking h1{font-size:30px}
+}
+/*part 4*/
+.menu{position: relative;margin-top: -80px;}
+.menu .h6{font-family: "Sofia";color: #E52C35;;font-size: 35px;position: relative;text-align: center;}
+.menu .h4{font-weight: bold;margin-top:-40px;color:#000000ad;position: relative;text-align: center;font-size: 45px;margin-bottom: 80px;}
+.menu .menu1{float: left;width:30%;margin-right: 3.33%}
+.menu1{padding:30px;border: 2px dashed #8080803b;margin-bottom:30px;transition: 1s;}
+.menu1> h6{text-align: center;font-weight: bold;font-size: 22px;margin-bottom: 40px;margin-top: 10px;}
+.first{position: relative;border-bottom: 2px dashed #8080805c;padding: 5px;margin-bottom: 20px;}
+.menu1 .first:last-of-type{border-bottom:none;padding: 0}
+.first img{width: 80px;border-radius: 50%;float: left;margin-right: 15px;height: 80px;}
+.first h6{width: 70%;  font-size: 18px;transition:.5s;}
+.first p{color: gray;}
+.first span{position: absolute;top: 1px;right: 0px;color: #E52C35;font-weight: bold;font-size: 20px;}
+.menu1:hover{border: 2px dashed #E52C35}
+.first:hover{border-bottom: 2px dashed #E52C35}
+.first:hover h6{color:#E52C35}
+@media only screen and (max-width:600px) {
+.menu .menu1{width: 100%;margin-left: 10px;margin-right: 10px;float: none;}
+.first{padding-bottom: 30px;}
+}
+/* part5*/
+.Testimony{overflow:hidden;height: 600px;background-image: url(../images/bg_5.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;clear:both;text-align: center;}
+.Testimony .overlay{padding: 10px;}
+.Testimony .overlay h6:first-child{font-family: "Sofia";color: #E52C35;font-size: 35px;position: relative;margin-top: 70px}
+.Testimony  h3{color:white;position: relative;top: -30px;font-size:40px;font-weight: bold;}
+.Testimony .item p{color: white;margin-bottom: 15px;font-size: 20px;margin-top: 50px;}
+.Testimony .display{display:none;}
+.item img{width: 100px;height: 100px;border-radius: 50%;}
+.item i{border-radius: 50%;border: 1px solid white;background: white;font-size: 20px;padding: 5px;margin-left: -35px;position: relative;
+    top: 30px;color: red;}
+.item h6{color: white;font-size: 20px;}
+.item span{color:#9A9A9A}
+.contorls span{width: 15px;height: 15px;background:#4a4444d9;position: absolute;border-radius: 50%;margin-top: 30px;border:2px solid #4a4444d9}
+.contorls .open{background-color:#E52C35}
+.contorls span:nth-of-type(1){left:620px}
+.contorls span:nth-of-type(2){left:640px}
+.contorls span:nth-of-type(3){left:660px}
+.contorls span:nth-of-type(4){left:680px}
+.contorls span:nth-of-type(5){left:700px}
+@media only screen and (max-width:600px) {
+  .contorls span:nth-of-type(1){left:38%}
+  .contorls span:nth-of-type(2){left:42%}
+  .contorls span:nth-of-type(3){left:46%;}
+  .contorls span:nth-of-type(4){left:50%}
+  .contorls span:nth-of-type(5){left:54%}
+}
+/* part 6*/
+.chef{position: relative;background: #FAFAFA;padding: 15px;padding-bottom: 100px;}
+.chef .container >h6{font-family: "Sofia";color: #E52C35;font-size:45px;margin-top:100px;text-align: center;}
+.chef h3{position: relative;top: -30px;font-size:40px;font-weight: bold;margin-bottom:40px;text-align: center;}
+.person img{max-width: 100%}
+.person .body{background-color: white;padding: 10px}
+.person .body h6{font-weight: bold;font-size: 18px;}
+.person .body span{color: #80808061;font-size: 13px;}
+.person .body p{line-height: 2;color: #808080cf;}
+.person .body i{font-size: 40px;color: #E52C35}
+/*part 7*/
+.Ingredients .images{float: left;width:50%}
+.Ingredients .body{margin-left: 5%;margin-top: 100px;float: left;width: 45%}
+.Ingredients .images img{float: left;width:46%;margin-right: 4%;height:400px}
+.Ingredients .body h6{font-family: "Sofia";color: #E52C35;font-size:40px;}
+.Ingredients .body h3{position: relative;top: -35px;font-size:40px;font-weight: bold;}
+.Ingredients .body p{color: #808080e0;line-height: 1.7;}
+.Ingredients .body button{width: 100px;height: 40px;color: white;outline: none;border: none;background:#E52C35;transition: 1s}
+.Ingredients .body button:hover{color:#E52C35;background: white;border: 1px solid #E52C35}
+@media only screen and (max-width:600px) {
+.Ingredients .images{float:none;width: 100%;}
+.Ingredients .images img{width:50%;margin-right:0%;}
+.Ingredients .body{margin-left:0%;position: relative;top:30px;;float:none;width:100%}
+.Ingredients .body button{margin-bottom: 60px}
+}
+/*part 8*/
+.blog{position: relative;clear: both;background: #FAFAFA;padding: 15px;padding-bottom: 150px;}
+.blog .container >h6{font-family: "Sofia";color: #E52C35;font-size:40px;margin-top:100px;text-align: center;}
+.blog h3{position: relative;top: -30px;font-size:40px;font-weight: bold;margin-bottom:40px;text-align: center;}
+.blog1 img{width:350px;height: 240px;}
+.blog1 span:first-of-type{color: #000000a6;font-size: 13px;}
+.blog1 p{font-size: 21px;font-weight: bold;}
+.blog1 .info{background: white;padding: 10px;border-bottom: 4px solid #80808038;height: 230px;}
+.blog1:hover .info{border-bottom: 4px solid #e52c35  }
+.blog1 .info button{background: #E52C35 ;color: white;padding: 7px;border: none;border-radius: 3px;transition: 1s}
+.blog1 .info button:hover{color:#E52C35;background: white;border: 1px solid #E52C35}
+.blog1 .info span:last-of-type{font-size: 13px;float: right;color: gray;margin-right: 20px;width: 40px;height: 40px;
+    border-radius: 50%;text-align: center;padding: 5px;background: #80808021;line-height: 2.3;}
+    @media only screen and (max-width:600px) {.blog1{margin-bottom:10px}
+    .blog1 img{max-width: 100%}
+  }
+/*part 9*/
+.book2{position: relative;text-align: center;padding: 50px;color: white;background:#E52C35 }
+.book2 h1{font-weight: bold;}
+.book2 button{padding: 5px;background: none;color: white;border: 1px solid white; margin-top: 10px;outline: none;transition: 1s}
+.book2 button:hover{color:#E52C35;background: white}
+/*footer*/
+.footer{background:#1A1A1A;color: white;padding: 15px;}
+.footer h5{margin-top: 70px;margin-bottom: 50px;font-weight: bold;}
+.TASTE p{color: #A0A0A0;font-size: 15px;line-height: 1.7;}
+.TASTE i{width: 40px;font-size: 20px;margin-right:10px;height: 40px;background: #E42B34;border-radius: 50%;text-align: center;
+line-height: 40px;transition: 1s}
+.TASTE i:hover{color: #E42B34;background: white}
+.OPEN ul{list-style-type: none;color: #C8C8C8;font-weight: bold;font-size: 15px;line-height: 2;}
+.OPEN ul:last-of-type{float: right;margin-top: -220px;color:#666666;margin-right: 50px;font-weight: normal;}
+.INSTAGRAM img{width:90px;height: 100px;margin-left: -10px;}
+.NEWSLETTER p{color: #A0A0A0}
+.NEWSLETTER input{text-indent: 10px;width: 100%;height: 50px;outline: none;background: #313131;margin-bottom: 15px;border: none;border-radius:3px;color:white}
+.NEWSLETTER input::placeholder{text-align: center;color:#A0A0A0}
+.NEWSLETTER button{width: 100%;height: 50px;outline: none;background:#E52C35;border: none;border-radius:3px;color:white}
+/*copyright*/
+.copy{text-align: center;color:white;background:#E52C35;padding:20px}
